@@ -1,0 +1,41 @@
+﻿<ArcGIS defaultAssembly="ExportTraceAsJson.dll" defaultNamespace="ExportTraceAsJson" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{05e83f4a-5e58-4b8d-ba34-aac5b08285f4}" version="1.0" desktopVersion="3.3.51341" target="ArcGISPro">
+    <Name>ExportTraceAsJson</Name>
+    <Description>ExportTraceAsJson description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>aas11333</Author>
+    <Company>ESRI</Company>
+    <Date>2/28/2024 7:53:39 AM</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="ExportTraceAsJson_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <!--<tab id="ExportTraceAsJson_Tab1" caption="New Tab">
+          <group refID="ExportTraceAsJson_Group1"/>
+        </tab>-->
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="ExportTraceAsJson_Group1" caption="Trace Demo" appearsOnAddInTab="true">
+          <!-- host controls within groups -->
+          <button refID="ExportTraceAsJson_TraceFeature" size="large" />
+          <button refID="ExportTraceAsJson_ExportTrace" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="ExportTraceAsJson_TraceFeature" caption="Trace Feature" className="TraceFeature" loadOnClick="true" smallImage="GenericButtonBlue16" largeImage="GenericButtonBlue32">
+          <tooltip heading="DevSummit Demo">Trace Feature<disabledText /></tooltip>
+        </button>
+        <button id="ExportTraceAsJson_ExportTrace" caption="Export Trace" className="ExportTrace" loadOnClick="true" smallImage="GenericButtonBlue16" largeImage="GenericButtonBlue32">
+          <tooltip heading="DevSummit Demo">Export Trace<disabledText /></tooltip>
+        </button>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>

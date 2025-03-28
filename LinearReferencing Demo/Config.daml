@@ -1,0 +1,41 @@
+﻿<ArcGIS defaultAssembly="LinearReferencingDemo.dll" defaultNamespace="LinearReferencingDemo" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{9c903256-f06c-4d94-abf7-92dd2d05275c}" version="1.0" desktopVersion="3.5.56552" product="ArcGISPro">
+    <Name>LinearReferencingDemo</Name>
+    <Description>LinearReferencingDemo description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>aas11333</Author>
+    <Company>ESRI</Company>
+    <Date>3/2/2025 6:32:40 PM</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="LinearReferencingDemo_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <!--<tab id="LinearReferencingDemo_Tab1" caption="New Tab">
+          <group refID="LinearReferencingDemo_Group1"/>
+        </tab>-->
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="LinearReferencingDemo_Group1" caption="Linear Referencing Demo" appearsOnAddInTab="true">
+          <!-- host controls within groups -->
+          <button refID="LinearReferencingDemo_DynamicSegmentation" size="large" />
+          <button refID="LinearReferencingDemo_LocateFeatures" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="LinearReferencingDemo_LocateFeatures" caption="Locate Features" className="LocateFeatures" loadOnClick="true" smallImage="GenericButtonBlue16" largeImage="GenericButtonBlue32">
+          <tooltip heading="Dynamic Segmentation">Locate Features<disabledText /></tooltip>
+        </button>
+        <button id="LinearReferencingDemo_DynamicSegmentation" caption="Dynamic Segmentation" className="DynamicSegmentation" loadOnClick="true" smallImage="GenericButtonBlue16" largeImage="GenericButtonBlue32">
+          <tooltip heading="Dynamic Segmentation">Dynamic Segmentation<disabledText /></tooltip>
+        </button>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
