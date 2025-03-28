@@ -1,4 +1,10 @@
-# Esri Dev &amp; Tech Summit Demo 2025: ArcGIS Pro SDK for .NET Exporting Utility Networks for Network Analysis in the Pro SDK
+# Esri Dev & Tech summit Demo 2025: ArcGIS Pro SDK for .NET What's New in the Geodatabase and Utility Network APIs
 
-Will upload codes soon!
+A] LinearReferencingDemo
+*  Dynamic segmentation
+* Locate Features Along Routes
 
+
+B] TraceFeaturesDemo
+* Fetch features' info during the UN trace
+* Export results of a UN trace as a JSON file
